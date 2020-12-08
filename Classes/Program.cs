@@ -36,8 +36,7 @@ namespace Classes
     {
         static void Main(string[] args)
         {
-
-            
+  
             new MyCar();
             new MyCar(150, 40);
             new MyCar(200, 100, 90);
@@ -67,7 +66,7 @@ namespace Classes
                     Console.WriteLine(itemCar.InfoMaxFuelMaxSpeed+"\t"+itemCar.WarningFuel);
                     itemCar.movement();
                     if (itemCar.Speed >= 25) itemCar.brakeCar();
-                    itemCar.speedGraikInfo();
+                    itemCar.speedGraphicInfo();
                     Console.WriteLine(itemCar.myCarInfo());
                     Console.WriteLine(km++ + " KM");
                     System.Threading.Thread.Sleep(200);

@@ -15,20 +15,27 @@ namespace Classes
         private decimal fuelPercent;
         public decimal Fuel { get { return fuel; } }
         public int Speed { get { return speed; } }
-        public bool BrakeLight { get { return brakeLight; } private set { brakeLight = false; } }
-        public decimal FuelPercent { get { return (fuel / maxFuel) * 100; } }
+        public bool BrakeLight
+        {
+            get { return brakeLight; }
+            private set { brakeLight = false; }
+        }
+        public decimal FuelPercent
+        {
+            get { return (fuel / maxFuel) * 100; }
+        }
 
         public string infoMaxFuelMaxSpeed;
         public string infoWarning;
         public string InfoMaxFuelMaxSpeed
         {
             get { return "maxFuel=" + maxFuel + "\tmaxSpeed" + maxSpeed; ; }
-            
+
         }
         public string WarningFuel
         {
-            get { return fuel < 5 ? "low fuel" : "Fuel "+ FuelPercent;  }
-            
+            get { return fuel < 5 ? "low fuel" : "Fuel " + FuelPercent; }
+
         }
 
         static MyCar()

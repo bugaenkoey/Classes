@@ -12,7 +12,7 @@ namespace Classes
             Console.Beep(2500, 100);
         }
 
-        public void speedGraikInfo()
+        public void speedGraphicInfo()
         {
             for (int i = 0; i < speed; i++)
             {
